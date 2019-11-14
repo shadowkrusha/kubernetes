@@ -32,7 +32,7 @@ go run ./pkg/generated/openapi/gen/main.go > ./pkg/generated/openapi/gen/openapi
 mv ./pkg/generated/openapi/gen/openapi.go ./pkg/generated/openapi/openapi.go
 rm -f ./pkg/generated/openapi/zz_generated.openapi.go
 
-buildDate=$(date -u '+%FT%RZ')
+buildDate=$(date -u '+%Y-%m-%dT%H:%M:%SZ')
 versionFiles="
     pkg/version/base.go
     pkg/kubectl/version/base.go
